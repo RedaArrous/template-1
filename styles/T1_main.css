@@ -69,7 +69,7 @@ header {
     flex-basis: 55%;
     transition: flex-basis .4s 0s ease;
 }
-.lines:hover .middle-line {
+.menu:hover .middle-line {
     flex-basis: 100%;
 }
 
