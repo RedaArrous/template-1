@@ -14,8 +14,8 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: transparent;
 }
 @media (min-width: 768px) {
@@ -37,17 +37,81 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px 0px;
 }
 .logo {
     width: 60px;
     height: 24px;
 }
 .menu {
-
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
 }
+.lines {
+    width: 30px;
+    height: 21px;
+    display: flex;
+    align-content: space-between;
+    flex-flow: wrap row-reverse;
+}
+.top-line, .middle-line {
+    height: 2px;
+    background-color: black;
+    flex-basis: 100%;
+}
+.middle-line {
+    height: 2px;
+    flex-basis: 55%;
+    transition: flex-basis .4s 0s ease;
+}
+.lines:hover .middle-line {
+    flex-basis: 100%;
+}
+
+.bottom-line {
+    height: 3px;
+    background-color: black;
+    flex-basis: 100%;
+}
+
 .drop-down-menu {
-    display: none;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0;
+    background-color: #eee;
+    position: relative;
+    top: 20px;
+    visibility: hidden;
+    /* z-index: 2; */
+    /* display: none; */
 }
+.drop-down-menu::before {
+    content: "";
+    border: transparent 10px solid;
+    border-bottom: #eee 10px solid;
+    position: absolute;
+    left: 88%;
+    top: -10%;
 
+}
+.menu:hover .drop-down-menu {
+    visibility: visible;
+}
+.drop-down-menu li {
+    padding: 15px;
+    width: 200px;
+    transition: padding-left .6s 0s ease;
+    
+}
+.drop-down-menu li:not(:last-of-type) {
+    border-bottom: 1px solid #ccc;
+}
+.drop-down-menu li:hover {
+    padding-left: 30px;
+}
