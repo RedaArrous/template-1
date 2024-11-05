@@ -131,9 +131,34 @@ header {
     justify-content: center;
     align-content: center;
     text-align: center;
+    margin: 0;
 }
 .landing-page h1 {
     color: var(--main-color);
     margin: 0;
     font-size: 50px;
+}
+        /* freatures */
+.features .container-1 {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+.features .container-1 .f {
+    max-width: 30%;
+    text-align: center;
+}
+.features .container-1 .f i {
+    color: var(--main-color);
+}
+
+.features .container-1 .f h3 {
+
+}
+.features .container-1 .f p {
+    max-width: 250px;
+    line-height: 1.8;
 }
