@@ -15,8 +15,8 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: transparent;
 }
 @media (min-width: 768px) {
@@ -37,11 +37,13 @@ body {
 }
         /* header  */
 header {
+    padding: 20px;
+}
+header .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px 0px;
 }
 .logo {
     width: 60px;
@@ -138,27 +140,35 @@ header {
     margin: 0;
     font-size: 50px;
 }
+.landing-page p {
+    font-size: 19px;
+    line-height: 1.8;
+}
         /* freatures */
-.features .container-1 {
+.features {
     background-color: #F6F6F6;
+    padding: 60px 0;
+}
+.features .container {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 0;
 }
-.features .container-1 .f {
+.features .container .f {
     max-width: 30%;
     text-align: center;
+    padding: 20px;
 }
-.features .container-1 .f i {
+.features .container .f i {
     color: var(--main-color);
 }
-
-.features .container-1 .f h3 {
-
+.features .container .f h3{
+    margin: 30px 0;
+    font-weight: 800;
 }
-.features .container-1 .f p {
-    max-width: 250px;
+.features .container .f p {
     line-height: 1.8;
+    color: #777;
+    font-size: 17px;
 }
