@@ -23,6 +23,9 @@ body {
     .container {
         width: 750px;
     }
+    .heading h2 {
+        font-size: 60px;
+    }
 }
 @media (min-width: 992px) {
     .container {
@@ -34,6 +37,28 @@ body {
     .container {
         width: 1170px;
     }
+}
+.heading {
+    text-align: center;
+    line-height: 0.35;
+}
+.heading h2 {
+    color: #EBECED;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+@media (max-width: 767px) {
+    .special-heading {
+    font-size: 60px;
+    }
+    .special-heading + p {
+    margin-top: -20px;
+    }
+}
+.heading p{
+    color: #797979;
 }
         /* header  */
 header {
@@ -156,7 +181,7 @@ header .container {
     align-items: center;
 }
 .features .container .f {
-    max-width: 30%;
+    width: 300px;
     text-align: center;
     padding: 20px;
 }
@@ -171,4 +196,8 @@ header .container {
     line-height: 1.8;
     color: #777;
     font-size: 17px;
+}
+            /* srvices */
+.services{
+padding: 60px 0;
 }
